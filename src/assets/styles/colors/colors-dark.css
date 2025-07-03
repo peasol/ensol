@@ -1,0 +1,105 @@
+@layer base {
+    .dark {
+        --primary: oklch(0.546 0.245 262.881);
+        --primary-foreground: oklch(0.379 0.146 265.522);
+        --primary-hover: oklch(0.5 0.245 262.881);
+
+        --secondary: oklch(0.4 0.01 285);
+        --secondary-foreground: #1A1A1A;
+        --secondary-hover: oklch(0.35 0.01 285);
+
+        --destructive: oklch(0.704 0.191 22.216);
+        --destructive-foreground: oklch(0.15 0.01 285);
+        --destructive-hover: oklch(0.71 0.191 22.216);
+        --muted: oklch(0.274 0.006 286.033);
+        --muted-foreground: oklch(0.705 0.015 286.067);
+        --accent: oklch(0.274 0.006 286.033);
+        --accent-foreground: oklch(0.985 0 0);
+
+        --outline: var(--background);
+        --outline-foreground: var(--accent-foreground);
+        --outline-hover: var(--accent);
+
+        --background: oklch(0.141 0.005 285.823);
+        --foreground: oklch(0.985 0 0);
+        --card: oklch(0.21 0.006 285.885);
+        --card-foreground: oklch(0.985 0 0);
+        --popover: oklch(0.21 0.006 285.885);
+        --popover-foreground: oklch(0.985 0 0);
+        
+        --icon-accent: oklch(0.4 0.01 285);
+        --icon-accent-foreground: #1A1A1A;
+        --icon-accent-hover: oklch(0.35 0.01 285);
+        --border: oklch(1 0 0 / 10%);
+        --input: oklch(1 0 0 / 15%);
+        --ring: oklch(0.488 0.243 264.376);
+
+        --hover: oklch(0.28 0.005 285.823);         /* +0.08 밝게 */
+        --select: oklch(0.34 0.005 285.823);        /* +0.16 밝게 */
+        --select-hover: oklch(0.38 0.005 285.823);  /* +0.24 밝게 */
+
+        --overlay: oklch(0.98 0.01 280 / 0.15);   /* 밝은 흐릿한 흰색 느낌 */
+        --overlay-foreground: oklch(0.1 0.01 280);           /* 거의 검정에 가까운 짙은 텍스트 */
+
+        --scrollbar-thumb: oklch(0.35 0.02 280);       /* 어두운 회색, 다크 배경 위에서 충분한 대비 */
+        --scrollbar-thumb-hover: oklch(0.5 0.03 280);  /* hover 시 더 선명한 대비감 */
+
+        /* MainLayout */
+        --main: oklch(0.18 0.005 285.9); /* equivalent to dark:bg-slate-800/50 */
+
+        /* sidebar */
+        --sidebar: var(--background);
+        --sidebar-foreground: oklch(0.985 0 0);
+        --sidebar-primary: oklch(0.546 0.245 262.881);
+        --sidebar-primary-foreground: oklch(0.379 0.146 265.522);
+        --sidebar-accent: oklch(0.274 0.006 286.033);
+        --sidebar-accent-foreground: oklch(0.985 0 0);
+        --sidebar-border: oklch(1 0 0 / 10%);
+        --sidebar-ring: oklch(0.488 0.243 264.376);
+
+        --sidebar-hover: oklch(0.274 0.006 286.033);
+        --sidebar-hover-foreground: oklch(0.985 0 0);
+
+        --sidebar-active: oklch(0.274 0.006 286.033);
+        --sidebar-active-foreground: var(--sidebar-foreground);
+        --sidebar-active-hover: oklch(0.274 0.006 286.033);
+
+        --sidebar-dropdown: oklch(0.1474 0.0162 262.14);
+        --sidebar-dropdown-item-foreground: oklch(0.8187 0.0087 258.22);
+        --sidebar-dropdown-item-hover: oklch(0.2187 0.0176 261.68);
+
+        /* 🌙 Table Colors: Dark Mode */
+        --data-table: var(--background);
+        --data-table-foreground: var(--foreground);
+        --data-table-border: oklch(0.28 0.02 285.8); /* 살짝 보이는 선 */
+
+        --data-table-accent: oklch(0.45 0.07 280);   /* 중간 채도 포인트 */
+        --data-table-muted: oklch(0.5 0.03 285);     /* 비교적 낮은 명도와 채도 */
+
+        /* ✅ Header */
+        --data-table-header: oklch(0.2 0.01 286); /* 아주 어두운 청회색 */
+
+        /* ✅ Row */
+        --data-table-row: oklch(0.16 0.01 286);
+        --data-table-row-odd: oklch(0.17 0.01 286);
+        --data-table-row-even: oklch(0.14 0.01 286);
+
+        /* ✅ Hover */
+        --data-table-row-hover: oklch(0.23 0.04 280); /* 약간 강조된 hover */
+        --data-table-row-odd-hover: oklch(0.24 0.04 280);
+        --data-table-row-even-hover: oklch(0.22 0.04 280);
+
+        /* ✅ Select */
+        --data-table-row-select: oklch(0.3 0.05 280); /* 선택된 행은 밝기와 채도 약간 증가 */
+        --data-table-row-odd-select: oklch(0.32 0.05 280);
+        --data-table-row-even-select: oklch(0.29 0.05 280);
+
+        /* ✅ Select + Hover */
+        --data-table-row-select-hover: oklch(0.36 0.06 280);
+        --data-table-row-odd-select-hover: oklch(0.38 0.06 280);
+        --data-table-row-even-select-hover: oklch(0.35 0.06 280);
+
+        /* ✅ Footer */
+        --data-table-footer: oklch(0.18 0.01 286);
+    }
+}

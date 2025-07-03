@@ -1,0 +1,21 @@
+/* header */
+.header {
+  position: fixed;
+  top: 30px;
+  left: 24px;
+  right: 24px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px 0 rgba(213, 219, 233, 0.25);
+
+  .logo {
+    width: 198px;
+    height: 28px;
+    background: url(../images/common/logo.svg) no-repeat;
+  }
+}

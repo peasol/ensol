@@ -1,0 +1,80 @@
+/* main */
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-width: 1200px;
+  min-height: 750px;
+  overflow: auto;
+  background: #F8FBFF;
+
+  .main-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 41px;
+    .txt-key {
+      display: block;
+      width: 705px;
+      height: 138px;
+      background: url(../../images/main/txt_main_key.png) no-repeat;
+    }
+
+    .goto-wrap {
+      display: flex;
+      a.goto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        outline: none;
+        .icon {
+          display: block;
+          margin: 0 -27px -63px -1px; /* 아이콘 svg로 표현시 빛 그라데이션이 완벽하게 표현 안됨. 디자인 완성도 위해 그림자 포함하여 png로 보여주고, 마진값 조정 */
+          width: 178px;
+          height: 178px;
+          &.i01 {
+            background: url(../../images/main/ic_goto_01.png) no-repeat;
+          }
+          &.i02 {
+            background: url(../../images/main/ic_goto_02.png) no-repeat;
+          }
+          &.i03 {
+            background: url(../../images/main/ic_goto_03.png) no-repeat;
+          }
+          &.i04 {
+            background: url(../../images/main/ic_goto_04.png) no-repeat;
+          }
+          &.i05 {
+            background: url(../../images/main/ic_goto_05.png) no-repeat;
+          }
+          &.i06 {
+            background: url(../../images/main/ic_goto_06.png) no-repeat;
+          }
+        }
+        .txt {
+          font-weight: 600;
+          font-size: 18px;
+          color: #343534;
+          transition: 0.2s ease-out;
+        }
+        &:hover, &:focus {
+          .txt {
+            color: #5ab7f5;
+          }
+        }
+      }
+    }
+  }
+
+  .setting {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 36px;
+    height: 36px;
+    background: url(../../images/main/ic_setting.svg) no-repeat;
+  }
+}

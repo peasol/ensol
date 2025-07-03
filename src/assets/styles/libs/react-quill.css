@@ -1,0 +1,69 @@
+@layer base {
+    .ql-editor img {
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    .ql-align-center {
+        text-align: center;
+    }
+
+    .ql-align-right {
+        text-align: right;
+    }
+
+    .ql-align-left {
+        text-align: left;
+    }
+
+    .ql-container {
+        @apply focus:!ring-2;
+        /*border-radius: 20px !important;*/
+        border: none !important;
+        background-color: transparent !important;
+        /*height: calc(100% - 46px) !important;*/
+    }
+
+    .quill-edit .ql-container {
+        height: calc(100% - 46px) !important;
+    }
+
+    .quill-readonly .ql-container {
+        height: 100% !important;
+    }
+
+    .ql-editor {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .ql-toolbar {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: none !important;        
+        border-bottom: 1px solid #ccc !important;
+        border-radius: 0 !important;    
+    }
+
+    .hide-toolbar .ql-toolbar {
+        display: none;
+    }
+
+    /* 에디터 wrapper와 컨테이너의 overflow를 visible로 */
+    .ql-container,
+    .ql-toolbar {
+        overflow: visible !important;
+    }
+
+    /* 드롭다운이 항상 위에 보이도록 z-index 보정 */
+    .ql-toolbar .ql-picker {
+        position: relative;
+        z-index: 1000 !important;
+    }
+    .ql-toolbar .ql-picker-options {
+        z-index: 2000 !important;
+        /* 필요시 absolute로 */
+        position: absolute;
+    }
+}

@@ -1,0 +1,18 @@
+/* 외부 라이브러리 */
+@import "tailwindcss";
+
+/* 디자인 색상 정의 : 기본/다크 */
+@import "./colors";
+
+/* 공통 베이스 */
+@import "./base.css";
+
+/* UI/컴포넌트 스타일 */
+@import "./components";
+@import "./header.min.css";
+
+/* 라이브러리 관련 스타일 */
+@import "./libs";
+
+/* 페이지별 커스터마이징 */
+@import "./pages";
