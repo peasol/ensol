@@ -6,6 +6,7 @@ import MainLayout from '@/layouts/MainLayout';
 import Publishing from '@/pages/publishing/Publishing';
 import SampleChart from '@/pages/publishing/guide/sampleChart';
 import SampleMain from '@/pages/publishing/guide/sampleMain';
+import SampleTab from '@/pages/publishing/guide/sampleTab';
 
 export const routes = [
   {
@@ -18,6 +19,7 @@ export const routes = [
           { path: 'publishing', element: <Publishing /> },
           { path: 'publishing/guide/sampleMain', element: <SampleMain /> },
           { path: 'publishing/guide/sampleChart', element: <SampleChart /> },
+          { path: 'publishing/guide/sampleTab', element: <SampleTab /> },
         ],
       },
       {
