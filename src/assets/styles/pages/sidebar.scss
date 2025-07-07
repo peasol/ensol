@@ -1,0 +1,162 @@
+/* sidebar */
+.sidebar {
+  display: block;
+  width: 180px;
+  background: #4C84E4;
+  box-shadow: 0px 0px 10px 0px rgba(61, 85, 144, 0.47);
+  transition: width 0.2s ease-out;
+  .logo-w {
+    display: block;
+    margin: 32px auto 22px;
+    width: 180px;
+    height: 24px;
+    background: url(../../images/common/logo_w.svg) no-repeat;
+  }
+}
+
+/* sidebar-min-layout */
+.sidebar-min-layout {
+  .sidebar:not(.wide) {
+    width: 65px;  
+    .logo-w {
+      width: 24px;
+      height: 24px;
+      background: url(../../images/common/logo_symbol.svg) no-repeat;
+    }
+    .nav-menu {
+      > ul.depth1 {
+        > li {
+          > a {
+            padding: 0 0 0 20px;
+            .txt {
+              display: none;
+            }
+            &.opened:before {
+              background: transparent;
+            }
+            &:after {
+              display: none;
+            }
+            &:hover {
+              background-color: #2A64C7;
+            }
+          }
+           > ul.depth2 {
+            display: none;
+           }
+        }
+      }
+    }
+  }
+} 
+
+/* nav-menu */
+.nav-menu {
+  > ul.depth1 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    > li {
+      display: flex;
+      flex-direction: column;
+      > a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 48px;
+        padding: 0 5px 0 14px;
+        z-index: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+        > i {
+          flex-shrink: 0;
+          width: 24px;
+          height: 24px;
+          &.ic-dashboard {
+            background: url(../../images/common/ic_menu_dashboard.svg) no-repeat;
+          }
+          &.ic-potted-plant {
+            background: url(../../images/common/ic_menu_potted-plant.svg) no-repeat;
+          }
+          &.ic-water-manage {
+            background: url(../../images/common/ic_menu_water_manage.svg) no-repeat;
+          }
+          &.ic-bug-report {
+            background: url(../../images/common/ic_menu_bug_report.svg) no-repeat;
+          }
+          &.ic-agriculture {
+            background: url(../../images/common/ic_menu_agriculture.svg) no-repeat;
+          }
+          &.ic-pager {
+            background: url(../../images/common/ic_menu_pager.svg) no-repeat;
+          }
+        }
+        .txt {
+          font-size: 16px;
+          color: #fff;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          top: 3px;
+          bottom: 3px;
+          left: -24px;
+          width: 0;
+          z-index: -1;
+          border-radius: 0 24px 24px 0;
+          background: #2A64C7;
+          transition: all 0.4s ease-in-out;
+        }
+        &:hover:before {
+          width: 192px;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          width: 24px;
+          height: 24px;
+          background: url(../../images/common/ic_ar_menu.svg) no-repeat;
+          transform: translateY(-50%);
+        }
+        &.opened:before {
+          width: 192px;
+        }
+        &.opened:after {
+          right: 20px;
+          width: 24px;
+          height: 24px;
+          background: url(../../images/common/ic_ar_menu_opened.svg) no-repeat;
+        }
+        &.opened + ul.depth2 {
+          display: flex;
+        }
+      }
+      > ul.depth2 {
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+        > li {
+          display: flex;
+          flex-direction: column;
+          > a {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            padding: 0 5px 0 49px;
+            font-size: 15px;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+      &.no-child a:after {
+        display: none;
+      }
+    }
+  }
+}

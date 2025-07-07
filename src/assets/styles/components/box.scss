@@ -1,0 +1,31 @@
+.box-type {
+  flex: 1;
+  padding: 14px 8px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 6px 0 rgba(220, 226, 237, 0.6);
+  overflow: hidden;
+  .box-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    padding: 0 6px;
+    gap: 6px;
+    margin-bottom: 13px;
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--T01);
+      line-height: 1.2;
+    }
+    p {
+      font-size: 12px;
+      color: var(--T04);
+    }
+  }
+  .box-cont {
+    padding: 0 6px;
+    max-height: calc(100% - 40px);
+    overflow: auto;
+  }
+}
