@@ -1,120 +1,14 @@
 @layer base {
   :root {
-    --primary: oklch(0.623 0.214 259.815);
-    --primary-foreground: oklch(0.20 0.214 259.815);
-    --primary-hover: oklch(0.58 0.214 259.815);
-
-    --primay-secondary: oklch(0.65 0.17 140);
-
-    --secondary: oklch(0.85 0.01 285);
-    --secondary-foreground: #F0F0F0;
-    --secondary-hover: oklch(0.8 0.01 285);
-
-    --destructive: oklch(0.577 0.245 27.325);
-    --destructive-foreground: oklch(0.98 0.01 256.92);
-    --destructive-hover: oklch(0.35 0.245 27.325);
-    --muted: oklch(0.967 0.001 286.375);
-    --muted-foreground: oklch(0.552 0.016 285.938);
-    --accent: oklch(0.967 0.001 286.375);
-    --accent-foreground: oklch(0.21 0.006 285.885);
-
-    --outline: var(--background);
-    --outline-foreground: var(--accent-foreground);
-    --outline-hover: var(--accent);
-
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.141 0.005 285.823);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.141 0.005 285.823);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.141 0.005 285.823);
-    --border: oklch(0.92 0.004 286.32);
-    --input: oklch(0.92 0.004 286.32);
-    --ring: oklch(0.623 0.214 259.815);
-
-    --hover: oklch(0.96 0.002 286.0);
-    --select: oklch(0.92 0.004 286.0);
-    --select-hover: oklch(0.88 0.004 286.0);
-
-    --overlay: oklch(0.3 0.02 280 / 0.4);     /* 어두운 푸른빛 회색, 불투명도 적당 */
-    --overlay-foreground: oklch(0.98 0.005 280);         /* 거의 흰색, 살짝 푸른 기운 */
-
-    --scrollbar-thumb: oklch(0.7 0.02 280);       /* 연한 회색, 살짝 푸른빛 */
-    --scrollbar-thumb-hover: oklch(0.55 0.03 280); /* hover 시 대비 증가 */
-
-    /* MainLayout */
-    --main: oklch(0.98 0.001 286); /* equivalent to bg-slate-100/80 */
-
-    /* sidebar */
-    --sidebar: var(--background);
-    --sidebar-foreground: oklch(0.141 0.005 285.823);
-    --sidebar-primary: oklch(0.623 0.214 259.815);
-    --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
-    /** sidebar에서 hover 효과를 accent를 사용 */
-    --sidebar-accent: oklch(0.967 0.001 286.375);
-    --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
-    --sidebar-border: oklch(0.92 0.004 286.32);
-    --sidebar-ring: oklch(0.623 0.214 259.815);
-
-    --sidebar-hover: oklch(0.967 0.001 286.375);
-    --sidebar-hover-foreground: oklch(0.21 0.006 285.885);
-
-    --sidebar-active: oklch(0.967 0.001 286.375);
-    --sidebar-active-foreground: var(--sidebar-foreground);
-    --sidebar-active-hover: oklch(0.267 0.001 286.375);
-
-    --sidebar-dropdown: white;
-    --sidebar-dropdown-item-foreground: oklch(0.3163 0.0211 262.52);
-    --sidebar-dropdown-item-hover: oklch(0.9425 0.0059 257.34);
-
-    /* ✅ Table Colors: Light Mode */
-    --data-table: var(--background);
-    --data-table-foreground: var(--foreground);
-    --data-table-border: oklch(0.89 0.01 285.8); /* 경계가 조금 더 보이도록 대비 증가 */
-    --data-table-accent: oklch(0.55 0.07 280);   /* 살짝 차분한 보색 느낌 */
-
-    --data-table-muted: oklch(0.63 0.02 285); /* 실제로 사용되면 대비 확보용 */
-
-    /* ✅ Header */
-    --data-table-header: oklch(0.95 0.01 286); /* 약간 푸르스름한 그레이 */
-
-    /* ✅ Row */
-    --data-table-row: oklch(0.985 0.002 286); /* 거의 흰색이지만 약간의 채도 */
-    --data-table-row-odd: oklch(0.975 0.002 286);
-    --data-table-row-even: oklch(0.965 0.002 286);
-
-    /* ✅ Hover */
-    --data-table-row-hover: oklch(0.97 0.03 280); /* hover 시 푸른빛 강조 */
-    --data-table-row-odd-hover: oklch(0.965 0.03 280);
-    --data-table-row-even-hover: oklch(0.96 0.03 280);
-
-    /* ✅ Select */
-    --data-table-row-select: oklch(0.96 0.04 280); /* 선택 시 대비 강조 */
-    --data-table-row-odd-select: oklch(0.955 0.04 280);
-    --data-table-row-even-select: oklch(0.945 0.04 280);
-
-    /* ✅ Select + Hover */
-    --data-table-row-select-hover: oklch(0.94 0.06 280);
-    --data-table-row-odd-select-hover: oklch(0.935 0.06 280);
-    --data-table-row-even-select-hover: oklch(0.93 0.06 280);
-
-    /* ✅ Footer */
-    --data-table-footer: oklch(0.92 0.01 286);
-
-    --LE01: #000;
-    --LE02: #565656;
-    --LE03: #767676;
-    --LE04: #A3A3A3;
-    --LE05: #B8B8B8;
-    --LE06: #DFDFDF;
-    --LE07: #F6F6F6;
-    --LE08: #FFFFFF;
-    --P01: #161C41;
-    --P02: #121658;
-    --P03: #313DAA;
-    --P04: #3F4FE0;
-    --P05: #B8BDF0;
-    --P06: #F0F4FA;
-    --E01: #E03F3F;
+    --T01: #101C2D;
+    --T02: #21353E;
+    --T03: #727E8F;
+    --T04: #8D9EB5;
+    --T05: #42c3e4;
+    --T06: #4da7d4;
+    --T07: #8b5cf6;
+    --T08: #2ed579;
+    --T09: #34bb74;
+    --T10: #e8a349;
   }
 }

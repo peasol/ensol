@@ -40,6 +40,6 @@ const sampleMain = () => {
   )
 }
 
-export default sampleMain
+export default sampleMain;
 
 
