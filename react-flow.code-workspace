@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "ensol",
+			"path": "."
+		},
+		{
+			"name": "react-flow",
+			"path": "../react-flow"
+		}
+	],
+	"settings": {
+		"liveSassCompile.settings.autoprefix": [],
+		"liveSassCompile.settings.formats": [
+			{
+				"format": "compressed",
+				"extensionName": ".min.css"
+			}
+		],
+		"liveSassCompile.settings.generateMap": false
+	}
+}

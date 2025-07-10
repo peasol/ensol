@@ -10,7 +10,7 @@ const AppLayout = () => {
       {!isPublishingRoute && (
         <div className="h-[100vh] bg-[#F8FBFF]">
           <header className="header">
-            <a href="#" className="logo" aria-label="스마트농업 정보시스템" />
+	          <a href="#" className="logo" aria-label="LG ESGuide">LG ES Sample Guide</a>
           </header>
           <a
             href="/publishing"
